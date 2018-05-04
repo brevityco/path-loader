@@ -196,7 +196,13 @@ module.exports.load = function (location, options) {
       return new Promise(function (resolve, reject) {
         var loader = getLoader(location);
 
+        console.log('LOADER');
+        console.log(loader);
+
+        console.log('loading...');
         loader.load(location, options || {}, function (err, document) {
+          console.log('grabbed doc');
+          console.log(document);
           if (err) {
             reject(err);
           } else {
