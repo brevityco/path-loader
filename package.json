@@ -60,6 +60,6 @@
   },
   "dependencies": {
     "native-promise-only": "^0.8.1",
-    "superagent": "^3.6.3"
+    "superagent": "https://github.com/brevityco/superagent.git"
   }
 }
